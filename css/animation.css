@@ -1,1 +1,28 @@
-
+/* Spinning animation */
+@keyframes rotate {
+    from { -webkit-transform: rotate(0deg) } 
+    to { -webkit-transform: rotate(360deg) } 
+}
+/*#########################################*/
+/* Edit classes */
+ .float-right{
+    float:right;
+    animation-duration:infinite;
+    background-position-x: right;
+    animation:rotate 1s  infinite;
+    animation-timing-function: cubic-bezier(1,0,.5,1);
+}
+.float-left{
+    float:left;
+    animation-duration:infinite;
+    background-position-x: left;
+    background-position-y:center;
+    animation:rotate 1s  infinite;
+    animation-timing-function: cubic-bezier(1,0,.5,1);
+}
+/* Posisitoning the images */
+img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+}
